@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcode Creator by kristoforusapm</title>
+</head>
+<body>
+  <div style="display:flex; flex-direction: column; align-items: center;justify-content: center;">
+    <canvas width="116" height="116" style="border: 2px solid rgb(12, 12, 12); height: 116px; width: 116px;" id="canvas"></canvas>
+    <label>QR Barcode Generator <small><i>*Tekan enter untuk mensubmit</i></small></label>
+    <input placeholder="Example: kristoforusapm.my.id" id="qrInput" onchange="generateQR()">
+  </div>
+  <script src="node_modules/qrcode/build/qrcode.js"></script>
+  <script>
+    function generateQR() {
+      let canvas = document.getElementById("canvas")
+      let qrInput = document.getElementById("qrInput")
+      QRCode.toCanvas(canvas, qrInput.value, (err) => {
+        if(err) console.error(err)
+        console.log('scan berhasil!')
+      })
+    }
+  </script>
+
+</body></html>
