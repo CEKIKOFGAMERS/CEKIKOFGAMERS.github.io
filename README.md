@@ -1,1 +1,1 @@
-# scanqr
+# self introduce web
