@@ -1,26 +1,66 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barcode Creator by kristoforusapm</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
-  <div style="display:flex; flex-direction: column; align-items: center;justify-content: center;">
-    <canvas width="116" height="116" style="border: 2px solid rgb(12, 12, 12); height: 116px; width: 116px;" id="canvas"></canvas>
-    <label>QR Barcode Generator <small><i>*Tekan enter untuk mensubmit</i></small></label>
-    <input placeholder="Example: kristoforusapm.my.id" id="qrInput" onchange="generateQR()">
-  </div>
-  <script src="node_modules/qrcode/build/qrcode.js"></script>
-  <script>
-    function generateQR() {
-      let canvas = document.getElementById("canvas")
-      let qrInput = document.getElementById("qrInput")
-      QRCode.toCanvas(canvas, qrInput.value, (err) => {
-        if(err) console.error(err)
-        console.log('scan berhasil!')
-      })
-    }
-  </script>
-
-</body></html>
+    <div class="container">
+        <h1>Welcome to my Website!</h1>
+        <p>Hello, my name is Kristoforus Ananta Putra Magallan, i'm from Indonesia</p>
+        
+        <h2>About Me</h2>
+        <p>I'm studying some Programing Language, See my skills!</p>
+        
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Node.js</li>
+            <li>Pawn</li>
+            <li>C#</li>
+            <li>PHP</li>
+            <li>Assembly</li>
+        </ul>
+        
+        <h2>Education</h2>
+        <ul>
+            <li>TK Mardi Putro 2 Wonoboyo</li>
+            <li>SD Negeri 2 Wonoboyo</li>
+            <li>SMP Negeri 2 Wonogiri</li>
+        </ul>
+        
+        <h2>Contact Me</h2>
+        <p>If you want to contact me, you can send an email to maga64613@kristoforusapm.my.id or DM me in instagram.com/cekikofgamers</p>
+    </div>
+    <p1>Copyright 2023 by Kristoforus Ananta Putra Magallan</p1>
+</body>
+</html>
